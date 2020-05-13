@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>cucG</groupId>
+	<artifactId>cucA</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+
+	<packaging>jar</packaging>
+
+	<name>cucA</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+
+	<dependencies>
+
+
+		<!-- SELENIUM JAVA for Selenium jars -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.0.0-alpha-5</version>
+		</dependency>
+		<!-- SELENIUM JAVA for Selenium jars -->
+
+		<!-- CUCUMBER JUNIT for TestRun cucumber options -->
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<!-- <version>1.2.5</version> -->
+			<version>1.2.2</version>
+		</dependency>
+		<!-- CUCUMBER JUNIT for TestRun cucumber options -->
+
+		<!-- CUCUMBER JAVA for feature file annotions highlights -->
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<!-- <version>1.1.5</version> -->
+			<version>1.2.2</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- CUCUMBER JAVA for feature file annotions highlights -->
+
+		<!-- PATH OF TOOL.jar added and POM is throwing an error if not existing 
+			these dependancies -->
+		<dependency>
+			<groupId>com.sun</groupId>
+			<artifactId>tools</artifactId>
+			<version>1.6</version>
+			<scope>system</scope>
+			<systemPath>C:\Program Files\Java\jdk1.8.0_251\lib\tools.jar</systemPath>
+		</dependency>
+		<!-- PATH OF TOOL.jar added and POM is throwing an error if not existing 
+			these dependancies -->
+
+	</dependencies>
+
+</project>
